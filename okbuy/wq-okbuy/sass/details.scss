@@ -1,0 +1,466 @@
+$w:width;
+$h:height;
+$d:display;
+/*详情页*/
+.detailmain{
+    #{$w}: 100%;
+    padding: 10px 0;
+    background: #fff;
+    position: relative;
+}
+.detaTitle{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    p{
+        font-family: 'SimSun';
+        color: #999;  
+        a{
+            color: #666;
+        }
+    }
+}
+
+/*详情页左边图片*/
+.detaleft{
+    #{$w}: 452px;
+    float: left;
+    position: relative;
+    z-index: 150;
+}
+.detaleft .detapic{
+    top: 0px;
+    z-index: 5000;
+    position: relative;
+}
+.detaleft .spic{
+    #{$w}: 450px;
+    #{$h}: 450px;
+    border: 1px solid #ececec;
+    overflow: hidden;
+    text-align: center;
+    background: #fff;
+}
+.detaleft .spiclist{
+    background: #fff;
+    border-bottom: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+    ul li{
+        #{$h}: 49px;
+        float: left;
+        border-right: 1px solid #ececec;
+        position: relative;
+    }
+    li a{
+        #{$d}: block;
+    }
+    li img{
+        #{$d}: block;
+        #{$w}: 49px;
+        #{$h}: 49px;
+    }
+}
+.spiclist li.first{
+    border-left: 1px solid #ececec;
+}
+.spiclist ul li .imgbor{
+    #{$w}: 47px;
+    #{$h}: 46px;
+    #{$d}: none;
+    border: 2px solid #c03;
+    position: absolute;
+    z-index: 200;
+    top: 0;
+    left: -1px;
+    background: url(../img/prodjiao.png) no-repeat -4px 0;
+}
+/*详情页右边*/
+.detaright{
+    float: left;
+    #{$w}: 719px;
+    margin-left: 29px;
+    .name{
+        color: #333;
+        font-size: 16px;
+        margin-top: 6px;
+        line-height: 24px;
+        font-weight: bold;
+        position: relative;
+        .title a{
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .more{
+            float: right;
+            color: #999;
+            font-size: 12px;
+            line-height: 20px;
+            font-weight: normal;
+            a{
+                color: #d70057;
+                margin-left: 5px;
+            }
+        }
+    }
+    .detaPrice{
+        #{$w}: 719px;
+        float: left;
+        color: #999;
+        margin-top: 14px;
+        display: inline-block;
+        background: #f6f6f6;
+        position: relative;
+        .price{
+            padding: 7px 0 15px 0;
+            border-bottom: 1px solid #e9e9e9;
+            .pricelist{
+                color: #999;
+                padding: 0 8px 0 0;
+                float: left;
+            }
+        }
+        .dazhe{
+            #{$h}: 20px;
+            float: left;
+            color: #fff;
+            margin-top: 19px;
+            border-radius: 24px;
+            line-height: 20px;
+            padding: 0 12px;
+            background: #f66b8c;
+        }
+    }
+}
+.pricelist {
+    .txt{
+        #{$w}: 56px;
+        #{$d}: inline-block;
+        padding-left: 20px;
+        color: #535353;
+    }
+    .colorred{
+        top: 2px;
+        font-size: 24px;
+        color: #d70057;
+        position: relative;
+        .redPrice{
+            font-size: 36px;
+            padding-left: 6px;
+        }
+    }
+    .bprice{
+        color: #999;
+        font-size: 14px;
+        margin: 0 10px;
+        text-decoration: line-through;
+    }
+}
+.total {
+    #{$h}: 30px;
+    #{$w}: 50px;
+    #{$d}: inline;
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
+    padding-left: 20px;
+    border-left: 1px solid #e9e9e9;
+    .cmtxt{
+        font-size: 12px;
+        color: #535353;
+    }
+    .cmtnum{
+        #{$d}: block;
+        text-align: center;
+        color: #d70057;
+        text-decoration: underline;
+    }
+}
+.letstime{
+    #{$h}: 20px;
+    margin-top: 10px;
+    color: #fff;
+    line-height: 20px;
+    .timetxt{
+        #{$w}: 56px;
+        float: left;
+        padding-left: 20px;
+        color: #535353;
+        font-size: 12px;
+    }
+    .timer{
+        float: left;
+        span{
+            margin-right: 8px;
+            color: #434343;
+            i{
+                #{$d}:inline-block;
+                #{$h}:22px;
+                line-height: 22px;
+                padding:0 8px;
+                margin-right: 8px;
+                background-color: #000;
+                text-align: center;
+                color: #fff;
+                border-radius: 4px;   
+            }
+            .red{
+                background-color: #d70057;
+            }
+        }
+    }
+}
+.activity{
+    padding-top: 12px;
+    .proh{
+        #{$w}: 56px;
+        #{$d}: inline;
+        float: left;
+        padding-top: 5px;
+        padding-left: 20px;
+        text-align: left;
+        line-height: 20px;
+        color: #535353;
+    }
+    .proact{
+        float: left;
+        .prodout{
+            margin-top: 5px;
+            margin-bottom: 5px;
+            span{
+                #{$h}: 22px;
+                #{$d}: inline-block;
+                background: #d70057;
+                color: #fff;
+                padding: 0 12px;
+                line-height: 20px;
+                margin-right: 10px;
+            }
+            a{
+                color: #535353;
+            }
+        }
+    }
+}
+.prod{
+    float: left;
+    padding-top: 5px;
+    padding-bottom: 16px;
+    .prodH{
+        #{$w}: 56px;
+        #{$d}: inline;
+        float: left;
+        padding-top: 5px;
+        padding-left: 20px;
+        text-align: left;
+        line-height: 20px;
+        color: #535353;
+    }
+    .promj{
+        float: left;
+        p{
+           float: left;
+           overflow: hidden;
+           margin-bottom: 5px;
+        }
+    }
+}
+.promj p{
+    .mj{
+        #{$h}: 22px;
+        #{$d}: block;
+        float: left;
+        background: #d70057;
+        color: #fff;
+        padding: 0 12px;
+        text-align: center;
+        line-height: 20px;
+    }
+    .protxt{
+        float: left;
+        padding-left: 10px;
+        color: #666;
+        a{
+            color: #a46c01;
+        }
+    }
+}
+.prodColor{
+    #{$w}: 719px;
+    margin-top: 16px;
+    float: left;
+    .pro{
+        #{$w}: 56px;
+        color: #535353;
+        font-size: 12px;
+        float: left;
+        padding-top: 2px;
+        padding-left: 20px;
+    }
+    .colorImg{
+        #{$w}: 643px;
+        float: left;
+        span{
+            #{$d}: block;
+            #{$w}: 59px;
+            #{$h}: 59px;
+            float: left;
+            border: 1px solid #d70057;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            position: relative;
+        }
+        i{
+            #{$d}: block;
+            #{$w}: 16px;
+            #{$h}: 16px; 
+            position: absolute;
+            z-index: 9;
+            right: 0;
+            bottom: 0;
+            background: url(../img/gou.png) no-repeat;
+        }
+    }
+}
+.prdoSize{
+    clear: both;
+    .pro{
+        #{$w}: 100%;
+        line-height: 18px;
+        float: left;
+        padding-top: 0;
+        padding-left: 20px;
+        font-size: 12px;
+        color: #535353;
+        clear: both;
+        a{
+            margin-left: 32px;
+            color: #d70057;
+        }
+    }
+}
+.prdoSize .size{
+    #{$w}: 640px;
+    margin-left: 76px;
+    padding-top: 10px;
+    clear: both;
+    li{
+        float: left;
+        margin-right: 10px;
+        padding-bottom: 10px;
+        white-space: nowrap;
+        p{
+            background: white;
+            a{
+                #{$d}: block;
+                border: 1px solid #ccc;
+                position: relative;
+                background: white;
+                span{
+                    #{$d}: block;
+                    padding: 0 15px;
+                    color: #333;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+}
+.prodNum{
+    #{$w}: 56px;
+    float: left;
+    color: #535353;
+    padding-top: 5px;
+    font-size: 12px;
+    line-height: 18px;
+    padding-left: 20px;
+}
+.detaright ul.count{
+    float: left;
+    li{
+        float: left;
+        .add, .reduce{
+            #{$w}: 28px;
+            #{$h}: 28px;
+            #{$d}: block;
+            cursor: pointer;
+            text-align: center;
+            font-weight: bold;
+            line-height: 30px;
+            font-size: 14px;
+            color: #8c8b8b;
+            background: #f9f9f9;
+            overflow: hidden;
+        }
+        .reduce{
+            border: 1px solid #b5b5b5;
+            border-right: 0
+        }
+        .add{
+            border: 1px solid #b5b5b5;
+            border-left: 0;
+        }
+        .input .inputnum{
+            #{$h}: 26px;
+            #{$w}: 30px;
+            border: 0;
+            overflow: hidden;
+            border-top: 1px solid #b5b5b5;
+            border-bottom: 1px solid #b5b5b5;
+            text-align: center;
+            line-height: 26px;
+        }
+    }
+}
+.cartwrap{
+    margin: 40px 0 0 76px;
+    .cartbtn{
+        #{$d}: inline;
+        float: left;
+        .proBtn{
+            #{$h}: 50px;
+            #{$w}: 250px;
+            border: 0;
+            color: #fff;
+            padding-left: 32px;
+            text-align: center;
+            line-height: 50px;
+            font-size: 20px;
+            border-radius: 1px;
+            cursor: pointer;
+            background: #d70057 url(../img/cartbtnbg.png) 59px 17px no-repeat;
+        }
+    }
+    .prodWishBlok{
+        margin-left: 270px;
+        padding-top: 17px;
+        .prodWish{
+            #{$h}: 16px;
+            line-height: 15px;
+            color: #999;
+            background: url(../img/wishstar.png) no-repeat;
+            padding-left: 22px;
+            a{
+                color: #999;
+            }
+        }
+    }
+}
+.detaright .prodNotice{
+    color: #999;
+    margin: 20px 0 16px 76px;
+    padding-left: 18px;
+    line-height: 16px;
+    background: url(../img/pronotic.png) top left no-repeat;
+    p{
+        line-height: 1.5;
+        text-align: justify;
+    }
+}
+.detaright .okbuy{
+    #{$w}: 630px;
+    #{$h}: 32px;
+    padding: 10px 0 10px 76px;
+    border-color: #dcdcdc;
+    border-width: 1px 0;
+    border-style: dashed;
+    background: url(../img/okservice.png) 72px 10px no-repeat;
+}

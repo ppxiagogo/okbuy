@@ -1,0 +1,352 @@
+input{outline: none;}
+/*顶部图片*/
+.top{
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	z-index: 1000;
+	
+}
+.top .hpop{
+	position: relative;
+	height: 85px;
+	width: 100%;
+}
+.top_tu1{
+	width: 50%;height: 85px;
+	position: absolute;
+	left: 0;top: 0;
+	background: url(http://i.okaybuy.cn/static/5d8caf3ca11a3ed2b1effe5bedd018ed.jpg) no-repeat right 0;
+}
+.top_tu2{
+	width: 50%;height: 85px;
+	position: absolute;
+	left: 50%;top: 0;
+	background-image: url(http://i.okaybuy.cn/static/8dd7cde6cbf2f7a416ba48a90121f090.jpg);
+}
+/*轮播图下图标*/
+.brand{
+	height: 315px;
+    background: #f5f5f5;
+    width: 100%;
+}
+.brand .brandin{
+	height: 194px;
+    overflow: hidden;
+    margin-top: 4px;
+}
+.brand .brandin a{
+	width:99px;height: 64px;
+	display: block;
+	background: #fff;
+	float: left;
+	text-align: center;
+	border-bottom: 1px solid #f5f5f5;
+	border-right: 1px solid #f5f5f5;
+}
+.brand .brandin img{
+	margin-top: 7px;
+}
+
+/*大抢购*/
+.list1{
+	margin-top: 30px;
+	overflow: hidden;
+}
+.list1 ul{
+	width: 1220px;
+}
+.list1 ul li{
+    width: 595px;
+    height: 210px;
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 10px;	
+}
+.list1 ul li a{
+	display: block;
+	width: 593px;
+    height: 208px;
+    border: 1px solid #e9e7ea;
+    position: relative;
+}
+#listUl li a .title1{
+	position: absolute;
+	top: 76px;
+	left: 0;
+	width: 200px;
+    text-align: center;
+	color: #333;
+    font-size: 14px;
+    line-height: 18px;
+}
+#listUl li a .title2{
+	position: absolute;
+	top: 94px;
+	left: 0;
+	width: 200px;
+    text-align: center;
+	color: #333;
+    font-size: 14px;
+    line-height: 18px;
+}
+#listUl li a .title3{
+	position: absolute;
+	top: 144px;
+	left: 0;
+	width: 200px;
+    text-align: center;
+	color: #d70057;
+    font-size: 20px;
+    line-height: 18px;
+    font-weight: bold;
+}
+#listUl li a .timer{
+	position: absolute;
+	left: 48px;
+    bottom: 10px;
+    color: #666;
+}
+
+/*小抢购*/
+.list2{
+	overflow: hidden;
+}
+.list2 ul{
+	width: 1220px;
+}
+.list2 ul li{
+	float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+#list2Ul li a{
+	display: block;
+	width: 388px;
+    height: 328px;
+    border: 1px solid #e9e7ea;
+    position: relative;
+}
+#list2Ul li p{
+	width: 250px;
+	text-align: left;
+	position: absolute;
+	left: 20px;
+    bottom: 50px;
+    color: #333;
+    font-size: 18px;
+}
+#list2Ul li p span{
+	color: #d70057;
+    font-weight: bold;
+}
+#list2Ul li a .timer2{
+	position: absolute;
+	left: 20px;bottom: 20px;
+	color: #666;
+}
+/*nav*/
+.nav{
+	height: 40px;
+    width: 100%;
+    background: #000
+}
+.nav .navwrap li{
+	float: left;
+	position: relative;
+}
+.navwrap li a{
+	width: 100px;
+	height: 40px;
+	float: left;
+	display: block;
+	font-size: 14px;
+	line-height: 40px;
+	color: #fff;
+	text-align: center;
+}
+.navwrap li a.xstm{ 
+    width: 122px;
+    height: 46px;
+    display: block;
+    float: left;
+    position: relative;
+    margin-top: -6px;
+    z-index: 999;
+    background: url(../img/common-thumb.png) -187px -46px no-repeat;;
+}
+.navwrap li a.cur{
+	width: 100px;
+	display: block;
+	height: 40px;
+	float: left;
+    text-align: center;
+    color: #fff;
+    line-height: 40px;
+    background: #d70057;
+}
+.navwrap li a.global{
+	width: 130px;
+}
+/*nav下拉*/
+.navsub{
+	height: 396px;
+	position: absolute;
+	top: 40px;
+	left: 0;
+	z-index: 900;
+    background-color: #fff;
+    max-width: 1200px;
+    box-shadow: 2px 2px 4px #acacac;
+    /*display: none;*/
+}
+
+/*箭头*/
+.navarr{
+	width: 16px;
+	height: 16px;
+	position: absolute;
+    top: -7px;
+    line-height: 16px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    font-family: "\5b8b\4f53";
+    text-decoration: none;
+}
+/*下拉主体*/
+.navmain{
+	padding: 12px 0;
+    overflow: hidden;
+    zoom: 1;
+}
+.navmain .colbox{
+	float: left;
+    display: inline;
+    padding: 10px 12px;
+    height: 352px;
+    overflow: hidden;
+    border-right: 1px dashed #aeaeae;
+}
+.navmain .colbox h3{
+	font-size: 12px;
+    font-weight: bold;
+    color: #D20D33;
+}
+.navmain .colbox .catewrap{
+	width: 320px;
+	padding-top: 12px;
+    line-height: 13px;
+    overflow: hidden;
+    zoom: 1;
+}
+.navmain .colbox h3.black{
+	color:#5E5E5E
+}
+.navmain .catewrap .context{
+	margin-top: 16px;
+}
+.navmain .catewrap .context a{
+	float: left;
+    display: inline;
+    width: auto;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    white-space: nowrap;
+    color: #5E5E5E;
+    overflow: hidden;
+}
+.navmain .combo{
+	float: left;
+    display: inline;
+    padding: 10px 10px 10px 12px;
+}
+/*轮播图*/
+.mainSlide{
+	height: 350px;
+    position: relative;
+}
+.mainSlide .cell{
+	position: absolute;
+    top: 0;
+    left: 0;
+    height: 350px;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+.mainSlide .cur{
+	display: block;
+	z-index: 555;
+	opacity: 1;
+}
+.mainSlide .cell .prom{
+	height: 350px;
+	width: 100%;
+	background-position: center top;
+    background-repeat: no-repeat;
+    text-align: center;
+    position: relative;
+}
+.mainSlide .cell .w1200 a{
+	width: 1200px;
+    height: 350px;
+    display: block;
+}
+.mainSlide .ad{
+	position: absolute;
+    bottom: 0;
+    left: 50%;
+    z-index: 777;
+    margin-left: -600px;
+}
+.mainSlide .leftar{
+	display: inline;
+    width: 22px;
+    height: 36px;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    margin-left: -578px;
+    z-index: 777;
+    background: url(../img/slideconcroll.png) 0 0 no-repeat;
+}
+.mainSlide .rightar{
+	display: inline;
+    width: 22px;
+    height: 36px;
+    position: absolute;
+    top: 150px;
+    right: 50%;
+    margin-right: -578px;
+    z-index: 777;
+    background: url(../img/slideconcroll.png) -22px 0 no-repeat;
+}
+.mainSlide .pglength{
+	position: relative;
+    z-index: 777
+}
+.mainSlide .pglength .picnum{
+	position: absolute;
+    left: 50%;
+    top: 310px;
+    margin-left: -60px;
+    z-index: 777;
+}
+.mainSlide .picnum i{
+	display: block;
+    width: 16px;
+    height: 16px;
+    float: left;
+    text-align: center;
+    line-height: 25px;
+    cursor: pointer;
+    background: #000;
+    opacity: 0.4;
+    border-radius: 8px;
+    margin-right: 8px;
+}
+.mainSlide .picnum i.cur{
+	opacity: 1;
+	background: #d70057;
+}

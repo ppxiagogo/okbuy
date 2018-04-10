@@ -1,0 +1,251 @@
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, tt, var, h1, h2, h3, h4, h5, h6, p, i, blockquote, pre, a, abbr, acronym, address, big, cite, code, dl, dt, dd, ol, ul, li, fieldset, form, label, legend{
+	outline: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    text-align: left;
+    font-style: normal;	
+}
+a{text-decoration: none;font-size: 12px;color: #5a5a5a;}
+input{outline: none;}
+body{background:#fff;font-family:"微软雅黑";font-size: 12px;color: #5a5a5a;}
+img{vertical-align: top;}
+.clear::after{
+	content: ".";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+}
+.header{
+	width:1200px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.header .logo{
+	float: left;
+}
+.header .right{
+	float: right;
+	height: 100px;
+	line-height: 100px;
+	font-size: 14px;
+	color: #666;
+}
+.header .right span{
+	margin-left: 60px;
+}
+.header .right i{
+	background:url(../img/input.png) no-repeat -76px -60px;
+	width: 16px;height: 16px;
+	margin-right: 5px;
+	vertical-align: middle;
+	display: inline-block;
+}
+.footer{
+	height: 28px;
+	line-height: 28px;
+    margin: 80px auto 10px;
+    text-align: center;
+    color: #999;
+    font-size: 12px;
+}
+
+/*中间注册样式*/
+.main{
+	height: 560px;
+	position: relative;
+	overflow: hidden;
+	
+}
+.main a img{
+	margin-left: -360px;
+}
+
+/*input样式*/
+.register{
+	width: 340px;height: 520px;
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	background: #fff;
+	z-index: 999;
+	padding: 0 30px;
+}
+.register .top{
+	width: 340px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    padding-bottom: 10px;
+}
+.register .top span{
+	display: inline-block;
+    width: 166px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    cursor: pointer;
+}
+/*tab切换*/
+.register .top span.active{
+	color: #d70057;
+}
+.register .top span.borderleft{
+	border-left: 1px solid #e0e0e0;
+}
+/*账号登录*/
+.register .tel, .register .pas{
+	border: 1px solid #e0e0e0;
+	width:337px;height: 50px;
+	position: relative;
+}
+.register .tel input, .register .pas input{
+    height: 48px;
+    width: 327px;
+    line-height: 46px;
+    padding-left: 10px;
+    font-size: 14px;
+    border: none;
+}
+/*用户名错误*/
+.register .waring{
+	height: 30px;
+	line-height: 30px;
+	color: #d00;
+	font-size: 12px;
+}
+.register .waring i{
+	display: inline-block;
+	width: 14px;height: 14px;
+    vertical-align: middle;
+    margin-right: 3px;
+    background: url(../img/input.png) no-repeat -76px 0;
+    display: none;
+}
+.register .waring span{
+	display: none;
+}
+/*密码错误*/
+.register .waring2{
+	height: 30px;
+	line-height: 30px;
+    color: #d00;
+	font-size: 12px;
+}
+.register .waring2 i{
+	display: inline-block;
+	width: 14px;height: 14px;
+    vertical-align: middle;
+    margin-right: 3px;
+    background: url(../img/input.png) no-repeat -76px 0;
+    display: none;
+}
+.register .waring2 span{
+	display: none;
+}
+/*登录按钮*/
+#loginbtn{
+	width: 338px;
+    height: 50px;
+    background: #d70057;
+    font-size: 18px;
+    font-weight: bold;
+    color:#fff;
+    border: none;
+    cursor: pointer;
+}
+.register .loginright{
+	float: right;
+	margin-top: 20px;
+	margin-right: 3px;
+	color: #999;
+}
+/*底部固定按钮*/
+.loginbtm{
+	position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    width: 360px;
+    padding: 16px 30px 16px 10px;
+    background: #f6f6f6;
+}
+.loginbtm .icon{
+	float: left;
+}
+.loginbtm .icon a{
+	display: inline-block;
+	padding: 0 10px;
+	border-right: 1px solid #e0e0e0;
+}
+.loginbtm .icon i{
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	vertical-align: middle;
+}
+.loginbtm .icon .qq{background: url(../img/input.png) -23px -58px no-repeat;}
+.loginbtm .icon .wx{background: url(../img/input.png) -5px -42px no-repeat;}
+.loginbtm .icon .zfb{background: url(../img/input.png) -5px -76px no-repeat;}
+.loginbtm .icon .wb{background: url(../img/input.png) -53px -30px no-repeat;}
+.loginbtm .icon .kx{background: url(../img/input.png) -23px -30px no-repeat;}
+.loginbtm .super{
+	float: right;
+	color: #666666;
+}
+.loginbtm .super i{
+	display: inline-block;
+    width: 16px;
+    height: 17px;
+    vertical-align: middle;
+	background: url(../img/input.png) -76px -30px no-repeat;
+}
+
+/*扫码登录*/
+.register .havecode{
+	height: 200px;
+    margin: 28px auto;
+    text-align: center;
+    position: relative;
+}
+.register .havecode .code{
+	position: absolute;
+	top:0;left: 80px;
+    width: 180px;
+    height: 180px;
+}
+.register .havecode .prompt{
+	position: absolute;
+    top: 0;right: 0;
+    width: 155px;
+    opacity: 0;
+    display:none;
+}
+.sm{
+	display: none;
+}
+.sm .codeword{
+	display: block;
+	font-size: 14px;
+	color: #666;
+	text-align: center;
+}
+.sm .codedown{
+	display: block;
+	font-size: 14px;
+	color: #666;
+	text-align: center;
+	margin: 10px auto;
+}
+.sm .codedown i{
+	display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    vertical-align: middle;
+    background: url(../img/input.png) -52px -58px no-repeat;
+}
